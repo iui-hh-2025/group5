@@ -4,15 +4,13 @@ body {
 }
 
 /* headings */
-h1, h2 {
+h1, h2, h3 {
 	text-align: center;
 	color: #1877F2; /* Facebook blue */
 }
 
 /* nav bar */
 nav {
-	position: sticky;
-	top: 0;
 	grid-area: nav;
 	background-color: white;
 	padding: 1em;
@@ -71,6 +69,8 @@ footer {
 
 /* nav links */
 nav ul {
+	position: sticky;
+	top: 0;
 	list-style: none;
 	display: flex;
 	gap: 1em;
