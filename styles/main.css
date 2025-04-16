@@ -1,43 +1,86 @@
 h1, h2 {
 	text-align: center;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	color: #1877F2; /* Facebook blue */
 }
 
+/* nav bar */
 nav {
 	position: sticky;
 	top: 0;
-}
-
-header {
-	grid-area: header;
-	background-color: yellow;
-}
-
-nav {
 	grid-area: nav;
 	background-color: white;
+	padding: 1em;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
 }
 
+/* header*/
+header {
+	grid-area: header;
+	background-color: #f0f2f5;
+	padding: 1.5em;
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* body */
 main {
 	grid-area: main;
-	background-color: orange;
+	background-color: white;
+	padding: 2em;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* aside */
 aside {
 	grid-area: aside;
-	background-color: bisque;
+	background-color: #fff;
+	padding: 1em;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+/* footer */
 footer {
 	grid-area: footer;
-	background-color: green;
+	background-color: #f0f2f5;
+	padding: 1em;
+	text-align: center;
+	color: #606770;
+	font-size: 0.9em;
 }
 
+/* grid layout */
 .grid-container {
 	display: grid;
 	grid-template-areas:
 		'header header header header header header'
 		'nav nav main main main main'
 		'nav nav footer footer footer footer';
-	grid-gap: .5em;
-   
+	grid-gap: 1em;
+	padding: 1em;
+	background-color: #e9ebee;
+}
+
+/* nav links */
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #1877F2;
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
 }
