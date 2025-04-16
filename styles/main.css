@@ -1,5 +1,43 @@
+h1, h2 {
+	text-align: center;
+}
+
 nav {
-	background: white;
 	position: sticky;
 	top: 0;
+}
+
+header {
+	grid-area: header;
+	background-color: yellow;
+}
+
+nav {
+	grid-area: nav;
+	background-color: white;
+}
+
+main {
+	grid-area: main;
+	background-color: orange;
+}
+
+aside {
+	grid-area: aside;
+	background-color: bisque;
+}
+
+footer {
+	grid-area: footer;
+	background-color: green;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header'
+		'nav nav main main main main'
+		'nav nav footer footer footer footer';
+	grid-gap: .5em;
+   
 }
