@@ -115,6 +115,7 @@ nav a:hover {
 	/* nav link direction */
 	nav ul {
 		flex-direction: row;
+		flex-wrap: wrap;
 		gap: .75em;
 	}
 
