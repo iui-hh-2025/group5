@@ -115,5 +115,12 @@ nav a:hover {
 	/* nav link direction */
 	nav ul {
 		flex-direction: row;
+		gap: .75em;
+	}
+
+	/* nav sticky to top of screen */
+	nav {
+		position: sticky;
+		top: 0;
 	}
 }
