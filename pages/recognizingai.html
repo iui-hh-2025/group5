@@ -6,6 +6,9 @@
 	<title>Factbook: Recognizing AI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../styles/main.css">
+	 <!-- jQuery and quiz script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../script/quiz.js"></script>
 </head>
 
 <body>
@@ -36,7 +39,22 @@
 			</p>
 		</section>
 		<section>
-			<h3>Quiz Minigame goes here</h3>
+			<h3>Can You Recognize AI?</h3>
+			 <div id="quiz-container" class="quiz-container">
+          <div class="question-area">
+            <p id="question-text"></p>
+          </div>
+          <div class="image1-area">
+            <img id="image1" class="image-option" src="../img/blank.png" alt="Option 1">
+          </div>
+          <div class="image2-area">
+            <img id="image2" class="image-option" src="../img/blank.png" alt="Option 2">
+          </div>
+          <div id="feedback" class="feedback-area hidden"></div>
+          <div id="next-btn-area" class="nextBtn-area hidden">
+            <button id="next-btn">Next</button>
+          </div>
+        </div>
 		</section>
 		<section>
 			<a href="userimpact.html">Next Page: User Impact and Psychology</a>

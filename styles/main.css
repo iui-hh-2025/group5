@@ -80,6 +80,66 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+/* Quiz Minigame styles */
+.quiz-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "question question"
+    "image1   image2"
+    "feedback nextBtn";
+  gap: 1em;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.quiz-container .question-area  { grid-area: question; }
+.quiz-container .image1-area   { grid-area: image1; }
+.quiz-container .image2-area   { grid-area: image2; }
+.quiz-container .feedback-area { grid-area: feedback; font-weight: bold; }
+.quiz-container .nextBtn-area  { grid-area: nextBtn; }
+
+.quiz-container .image-option {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+.quiz-container .image-option:hover {
+  transform: scale(1.02);
+}
+
+.quiz-container .selected {
+  border-color: #FFA726;
+}
+
+.quiz-container .hidden {
+  display: none;
+}
+
+.quiz-container button {
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  transition: background 0.2s;
+}
+.quiz-container button:hover {
+  background-color: #45a049;
+}
+
 /* Desktop screen */
 @media (min-width: 800px) {
 	/* grid layout */
@@ -127,4 +187,23 @@ nav a:hover {
 		position: sticky;
 		top: 0;
 	}
+	/*quiz items stack vertically on mobile */
+	 .quiz-container {
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto    /* question */
+      auto    /* image1 */
+      auto    /* image2 */
+      auto    /* feedback */
+      auto;   /* nextBtn */
+    grid-template-areas:
+      "question"
+      "image1"
+      "image2"
+      "feedback"
+      "nextBtn";
+  }
+  .quiz-container .image-option {
+    max-width: 100%;
+  }
 }
