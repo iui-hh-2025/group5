@@ -6,8 +6,8 @@
     "question": "Select the image that was created by AI."
   },
   {
-    "image1": "../img/Real-Duck.jpg",
-    "image2": "../img/Ai-Duck.png",
+    "image1": "../img/Real-Duck.png",
+    "image2": "../img/Ai-Duck.jpg",
     "correctIndex": 1, 
     "question": "Select the image that was created by AI."
   },
