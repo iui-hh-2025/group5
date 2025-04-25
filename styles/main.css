@@ -85,8 +85,8 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 1.5em;
+  margin: 2em 0;
 }
 
 .image-group img {
