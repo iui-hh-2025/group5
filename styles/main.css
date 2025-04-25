@@ -80,6 +80,24 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+/* image groups for displaying images in a flex box */
+.image-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.image-group img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Quiz Minigame styles */
 .quiz-container {
   display: grid;
@@ -187,6 +205,12 @@ nav a:hover {
 		position: sticky;
 		top: 0;
 	}
+
+	/*image groups stack vertically on mobile*/
+	.image-group {
+    flex-direction: column;
+    align-items: center;
+  }
 	/*quiz items stack vertically on mobile */
 	 .quiz-container {
     grid-template-columns: 1fr;
