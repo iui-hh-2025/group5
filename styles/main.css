@@ -86,6 +86,10 @@ nav .active {
 	text-decoration: underline;
 }
 
+img {
+	width: 100%;
+}
+
 /* image groups for displaying images in a flex box */
 .image-group {
   display: flex;
