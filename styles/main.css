@@ -72,11 +72,17 @@ nav ul {
 
 nav a {
 	text-decoration: none;
-	color: #1877F2;
+	color: #0000ee;
 	font-weight: bold;
 }
 
 nav a:hover {
+	text-decoration: underline;
+}
+
+/* highlights current page */
+nav .active {
+	color: black;
 	text-decoration: underline;
 }
 
