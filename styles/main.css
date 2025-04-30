@@ -87,7 +87,7 @@ nav .active {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
 
 /* image groups for displaying images in a flex box */
