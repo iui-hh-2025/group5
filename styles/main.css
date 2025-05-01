@@ -190,6 +190,8 @@ p.img-container {
 		grid-gap: 1em;
 		padding: 1em;
 		background-color: #e9ebee;
+		max-width: 1440px;
+        	margin: 0 auto;
 	}
 
 	/* nav link direction */
