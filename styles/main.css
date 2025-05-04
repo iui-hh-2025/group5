@@ -135,7 +135,7 @@ img {
 }
 
 /* paragraphs with single image. applies border and centers */
-p.img-container {
+.img-container {
     text-align: center;
     max-width: fit-content;
     margin: 3em auto;
