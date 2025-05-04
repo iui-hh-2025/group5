@@ -182,7 +182,7 @@ p.img-container {
 
 .iframe-container {
   margin: auto auto;
-  width: 75%;
+  max-width: 75%;
   position: relative;
   overflow: hidden;
   padding-top: 42.2%;
@@ -199,6 +199,11 @@ p.img-container {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* wrap text for all links in citations */
+.citation-link {
+  word-break: break-all;
 }
 
 /* Desktop screen */
@@ -274,5 +279,10 @@ p.img-container {
   }
   .quiz-container .image-option {
     max-width: 100%;
+  }
+  
+  .iframe-container {
+    width: 100%;
+    height: 56.2%;
   }
 }
