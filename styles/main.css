@@ -178,6 +178,33 @@ p.img-container {
   background-color: #45a049;
 }
 
+/* Homepage video styles */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #000; /* fallback background */
+}
+
+.iframe-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* wrap text for all links in citations */
+.citation-link {
+  word-break: break-all;
+}
+
 /* Desktop screen */
 @media (min-width: 800px) {
 	/* grid layout */
@@ -191,7 +218,7 @@ p.img-container {
 		padding: 1em;
 		background-color: #e9ebee;
 		max-width: 1440px;
-        	margin: 0 auto;
+        margin: 0 auto;
 	}
 
 	/* nav link direction */
@@ -230,26 +257,34 @@ p.img-container {
 
 	/*image groups stack vertically on mobile*/
 	.image-group {
-    flex-direction: column;
-    align-items: center;
-  }
+    	flex-direction: column;
+    	align-items: center;
+  	}
+	
 	/*quiz items stack vertically on mobile */
-	 .quiz-container {
-    grid-template-columns: 1fr;
-    grid-template-rows:
-      auto    /* question */
-      auto    /* image1 */
-      auto    /* image2 */
-      auto    /* feedback */
-      auto;   /* nextBtn */
-    grid-template-areas:
-      "question"
-      "image1"
-      "image2"
-      "feedback"
-      "nextBtn";
-  }
-  .quiz-container .image-option {
-    max-width: 100%;
-  }
+ 	.quiz-container {
+    	grid-template-columns: 1fr;
+    	grid-template-rows:
+      		auto    /* question */
+      		auto    /* image1 */
+      		auto    /* image2 */
+      		auto    /* feedback */
+      		auto;   /* nextBtn */
+    	grid-template-areas:
+      		"question"
+      		"image1"
+      		"image2"
+      		"feedback"
+      		"nextBtn";
+  	}
+
+  	.quiz-container .image-option {
+    	max-width: 100%;
+  	}
+
+  	.iframe-container {
+    	width: 100%;
+    	height: 56.2%;
+  	}
 }
+
