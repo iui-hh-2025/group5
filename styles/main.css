@@ -1,6 +1,7 @@
 /* font family */
 body {
 	font-family: 'Helvetica Neue', Arial, sans-serif;
+	background-color: #e9ebee;
 }
 
 /* headings */
@@ -22,12 +23,37 @@ nav {
 /* header */
 header {
 	grid-area: header;
-	background-color: #f0f2f5;
+	background-color: #0b48b2; /* logo blue */
 	padding: 1.5em;
 	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	display: flex;
+  	align-items: center;
 }
+
+.logo {
+  height: 150px; /* adjust at smaller screens */
+  margin-right: 20px;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.header-text h1 {
+  background-color: #0b48b2; /* matching logo blue */
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.header-text h2 {
+  color: #E4E6EB; /* subtle off-white */
+  margin: 5px 0 0 0;
+}
+
 
 /* main content */
 main {
@@ -253,6 +279,22 @@ p.img-container {
 	nav {
 		position: sticky;
 		top: 0;
+	}
+
+	/*adjust header padding, text size, and image to fit text */
+	header {padding: 1.5em 1em;}
+	
+	.logo {
+		height: 100px;
+    		margin-right: 10px;
+	}
+	
+	.header-text h1 {
+  		font-size: 1.8em; 
+	}
+
+	.header-text h2 {
+  		font-size: 1.2em;
 	}
 
 	/*image groups stack vertically on mobile*/
