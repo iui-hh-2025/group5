@@ -179,23 +179,22 @@ p.img-container {
 }
 
 /* Homepage video styles */
-
 .iframe-container {
-  margin: auto auto;
-  max-width: 75%;
   position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border-radius: 12px;
   overflow: hidden;
-  padding-top: 42.2%;
-  padding-left: auto;
-  padding-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #000; /* fallback background */
 }
 
 .iframe-video {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   border: none;
@@ -219,7 +218,7 @@ p.img-container {
 		padding: 1em;
 		background-color: #e9ebee;
 		max-width: 1440px;
-        	margin: 0 auto;
+        margin: 0 auto;
 	}
 
 	/* nav link direction */
@@ -258,31 +257,34 @@ p.img-container {
 
 	/*image groups stack vertically on mobile*/
 	.image-group {
-    flex-direction: column;
-    align-items: center;
-  }
+    	flex-direction: column;
+    	align-items: center;
+  	}
+	
 	/*quiz items stack vertically on mobile */
-	 .quiz-container {
-    grid-template-columns: 1fr;
-    grid-template-rows:
-      auto    /* question */
-      auto    /* image1 */
-      auto    /* image2 */
-      auto    /* feedback */
-      auto;   /* nextBtn */
-    grid-template-areas:
-      "question"
-      "image1"
-      "image2"
-      "feedback"
-      "nextBtn";
-  }
-  .quiz-container .image-option {
-    max-width: 100%;
-  }
-  
-  .iframe-container {
-    width: 100%;
-    height: 56.2%;
-  }
+ 	.quiz-container {
+    	grid-template-columns: 1fr;
+    	grid-template-rows:
+      		auto    /* question */
+      		auto    /* image1 */
+      		auto    /* image2 */
+      		auto    /* feedback */
+      		auto;   /* nextBtn */
+    	grid-template-areas:
+      		"question"
+      		"image1"
+      		"image2"
+      		"feedback"
+      		"nextBtn";
+  	}
+
+  	.quiz-container .image-option {
+    	max-width: 100%;
+  	}
+
+  	.iframe-container {
+    	width: 100%;
+    	height: 56.2%;
+  	}
 }
+
