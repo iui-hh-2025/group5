@@ -289,6 +289,16 @@ img {
   	.iframe-container { width: 100%; height: 56.2%; }
 }
 
+/* Small mobile screen */
+@media (max-width: 500px) {
+	.logo {
+		height: 75px;
+    	margin-right: 10px;
+	}
+	.header-text h1 { font-size: 1.4em; }
+	.header-text h2 { font-size: 1em; }
+}
+
 /* ✅ NEW: Smaller consistent image style */
 .small-img {
   width: 100%;
